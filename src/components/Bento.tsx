@@ -13,7 +13,7 @@ export function Bento() {
   return (
     
     <div>
-         <h1 className="mb-4 text-4xl text-center font-extrabold leading-none py-24 tracking-tight text-white md:text-5xl lg:text-6xl ">We invest in the world’s potential</h1>
+         <h1 className="mb-4 text-2xl py-24 text-center font-bold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">Unlocking Hope, Restoring Balance : Your Journey to Mental Well-being</h1>
         <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]  ">
       {items.map((item, i) => (
         <BentoGridItem

@@ -44,7 +44,7 @@ function StressLevelPrediction() {
   };
 
   return (
-    <div className="flex justify-between items-center gap-12">
+    <div className="flex justify-between items-center gap-12 ">
     <div className="container mx-auto px-4 mt-36 w-1/2">
       <h1 className="text-5xl text-center text-white font-semibold mb-4">Stress Level Prediction</h1>
 \
