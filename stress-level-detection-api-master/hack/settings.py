@@ -53,8 +53,8 @@ MIDDLEWARE = [
 ]
 CORS_ORIGIN_ALLOW_ALL = False  # Set it to True if you want to allow all origins
 CORS_ORIGIN_WHITELIST = (
-    'http://example.com',
-    'https://example.com',
+    'http://localhost:3000/stress/stressmodal',
+    'http://localhost:3000/stress/stressmodal',
     # Add more allowed origins if needed
 )
 

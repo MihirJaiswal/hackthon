@@ -16,7 +16,7 @@ class MyModel:
         elif prediction[0] == 1:
             return "Stress Level: MEDIUM"
         else:   
-            return "Stress Level: nothing"
+            return "Stress Level: HIGH"
                             
 def main():
     st.title('STRESS LEVEL PREDICTION WEB APP')
