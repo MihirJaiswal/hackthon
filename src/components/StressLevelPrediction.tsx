@@ -33,7 +33,7 @@ function StressLevelPrediction() {
       }
 
       const data = await response.json();
-
+      console.log(data)
       setPrediction(data.prediction);
       
       setError("");
@@ -89,7 +89,7 @@ function StressLevelPrediction() {
       </form>
 
       {/* Display the prediction result */}
-      {prediction && <h2 className="text-xl font-semibold mt-4">Prediction: {prediction}</h2>}
+      {prediction && <h2 className="text-xl font-semibold mt-4 text-white">Prediction: {prediction}</h2>}
 
       {/* Display any error messages */}
       {error && (
