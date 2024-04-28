@@ -11,7 +11,7 @@ const HomeHeader = () => {
   return (
     <div className='fixed w-full top-0 z-50 bg-mainb backdrop-blur-sm border-b border-n-6 lg:bg-black lg:backdrop-blur-sm'>
         <div className='flex justify-between items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4'>
-        <a href="#hero" className='flex items-center w-[12rem] xl:mr-8'>
+        <a href="/" className='flex items-center w-[12rem] xl:mr-8'>
             <Image
             alt='logo'
             src={logo}

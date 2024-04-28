@@ -59,7 +59,7 @@ function AnxietyLevel() {
           Predict
         </button>
       </form>
-      {prediction && <h2 className="text-xl font-bold mt-4">Prediction: {prediction}</h2>}
+      {prediction && <h2 className="text-xl font-bold mt-4 text-center text-white">Prediction: {prediction}</h2>}
 
       {error && (
         <div className="text-red-500 mt-4">

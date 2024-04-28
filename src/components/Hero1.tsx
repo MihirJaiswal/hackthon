@@ -3,12 +3,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
-
+import robot from '../../public/robot.svg'
 
 
 const Hero1 = () => {
   return (
-    <div className='bg-herob mt-12'>
+    <div className='bg-herob mt-4 h-full'>
       <section className=" bg-dotted-pattern bg-contain py-5 md:py-10">
         <div className="max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0 ">
           <motion.div // Wrap with motion.div for animation
@@ -17,8 +17,8 @@ const Hero1 = () => {
             transition={{ duration: 0.8}} // Animation duration
             className="flex flex-col justify-center gap-8"
           >
-            <h1 className="font-semibold text-gray-100 text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px]">
-            Unlock Inner Harmony: Stress, Anxiety, Healing
+            <h1 className="font-semibold text-gray-100 text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px] ">
+            Introducing Equilibria: Your Personal Mental Health Companion
             </h1>
             <p className="leading-[30px] tracking-[2%] md:font-normal text-[20px] leading-[36px] text-gray-400">
             Your Path to Stress Prediction, Anxiety Assessment, and Mindful Healing!
@@ -35,7 +35,13 @@ const Hero1 = () => {
             </motion.button>
           </motion.div>
           <div className='px-auto mr-6 md:mr-0'>
-    
+            <Image
+              src={robot}
+              alt="robot"
+              width={500}
+              height={500}
+              className="mt-20 ml-20"
+            />
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ export const navigation = [
     {
       label: "1",
       title: "Anxious Meter",
-      route: "/anxiety",
+      route: "/anx",
     },
     {
       label: "2",
@@ -16,8 +16,8 @@ export const navigation = [
     },
     {
       label: "3",
-      title: "Relax Me",
-      route: "/relax",
+      title: "Sleep",
+      route: "/sleep",
     },
    
   ];
