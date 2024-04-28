@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import HomeHeader from "@/components/HomeHeader";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Addon from "@/components/Addon";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
     <HomeHeader/>
     <Hero/>
     <Benefits/>
-    <About/>
+    <Addon/>
     <Bento/>
     <Footer/>
    </div>
