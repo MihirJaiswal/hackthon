@@ -158,7 +158,7 @@ const config = {
         "bgbluegra": "linear-gradient(to bottom, #4114e3, #7a5af0, #a791f9, #d2c8fe, #ffffff);",
         "herob": "linear-gradient(to bottom, #000000, #1a151b, #1e2635, #0c3b49, #07504c);",
         "herorev": "linear-gradient(to bottom, #074f4b, #0c3a48, #1d2634, #1a151b, #000000);",
-        "revhero": "linear-gradient(to bottom, #000000, #140e13, #1b1922, #1c2432, #103845);"
+        "revhero": "linear-gradient(to bottom, #000000, #140e13, #1b1922, #1c2432, #123442);"
       },
       keyframes: {
         shimmer: {
