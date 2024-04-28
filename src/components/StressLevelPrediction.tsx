@@ -9,13 +9,13 @@ function StressLevelPrediction() {
   const [error, setError] = useState("");
 
   // Handle form submission
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e : any) => {
     e.preventDefault(); 
 
 
     const requestData = {
       humidity: parseFloat(humidity),
-      temperature: parseFloat(temperature),
+      Temperature: parseFloat(temperature),
       step_count: parseInt(stepCount, 10),
     };
 
@@ -87,9 +87,9 @@ function StressLevelPrediction() {
           Predict
         </button>
       </form>
-
+      console.log(prediction)
       {/* Display the prediction result */}
-      {prediction && <h2 className="text-xl font-semibold mt-4 text-white text-center py-8 border border-white border-lg">Prediction: {prediction}</h2>}
+      {prediction && <h2 className="text-xl font-semibold mt-4 text-white text-center py-8 border border-white border-lg">{prediction}</h2>}
 
       {/* Display any error messages */}
       {error && (
