@@ -1,69 +1,38 @@
-import { cn } from "../../utils/cn";
-import React from "react";
-import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
-import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
-import Image from "next/image";
+'use client'
+import { HoverEffect } from "./ui/card-hover-effect";
 
 export function Bento() {
   return (
-    
-    <div>
-         <h1 className="mb-4 text-2xl py-24 text-center font-bold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">Unlocking Hope, Restoring Balance</h1>
-        <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]  ">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={item.className}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div className="max-w-5xl mx-auto px-8">
+        <h1 className="mb-4 text-2xl py-24 text-center font-bold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">Our AI models that make life easier</h1>
+      <HoverEffect items={projects} />
     </div>
   );
 }
-const Skeleton = () => (
-  <Image
-  src=""
-  alt=""
-  className="w-full h-full object-cover"
-  />
-);
-const items = [
+export const projects = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    className: "md:col-span-2",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Power of Communication",
+    title: "Stress",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+      "A model that predicts stress based on humidity, temperature and footstep",
+    link: "/stress",
   },
+  {
+    title: "ChatBot",
+    description:
+      "A chat bot that provides solutions to common problems related to mensual health",
+    link: "/chatbot",
+  },
+  {
+    title: "Anxious Meter",
+    description:
+      "A mental health app that provides tips on how to deal with Anxiety",
+    link: "/anx",
+  },
+  {
+    title: "Sleep",
+    description:
+      "A AI model that predicts sleep quality based on sleep duration and time in bed",
+    link: "/sleep",
+  },
+  
 ];

@@ -28,7 +28,7 @@ const Benefits = () => {
           />
           <h3 className="text-4xl font-bold text-gray-200 mb-6">Mindfullness</h3>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut illum fugit iste aliquid at, nihil molestias unde.
+          Enhance mindfulness: Our model suggests mindfulness practices tailored to your unique needs for inner peace.
           </p>
         </motion.div>
 
@@ -44,7 +44,7 @@ const Benefits = () => {
           />
           <h3 className="text-4xl font-bold text-gray-200 mb-6">Cure depression</h3>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis esse laborum voluptate nam adipisci sapiente sint. Totam non necessitatibus atque?
+          Our model utilizes advanced techniques, providing personalized insights to aid in depression management and recovery.
           </p>
         </motion.div>
 
@@ -60,7 +60,7 @@ const Benefits = () => {
           />
           <h3 className="text-4xl font-bold text-gray-200 mb-6">Reduce Stress</h3>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate quisquam tempora odio ad dolores quos, repellendus iste?
+           Our model offers personalized strategies to alleviate stress, promoting well-being and resilience in daily life.
           </p>
         </motion.div>
       </div>
