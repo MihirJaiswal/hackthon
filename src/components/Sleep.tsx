@@ -10,7 +10,7 @@ function Sleep() {
    const [error, setError] = useState("");
  
    
-   const handleSubmit = async (e) => {
+   const handleSubmit = async (e:any) => {
      e.preventDefault(); 
      const requestData = {
         sleep_duration: parseFloat(sleep_duration),
@@ -85,7 +85,7 @@ function Sleep() {
  
          <button type="submit" className="w-full bg-cyan-500 text-white py-2 px-4 rounded-md hover:bg-cyan-600 focus:outline-none focus:bg-cyan-600">Predict</button>
        </form>
-       {prediction && <h2 className="text-xl font-semibold mt-4">Prediction: {prediction}</h2>}
+       {prediction && <h2 className="text-xl font-light mt-4 text-center text-white">Prediction: {prediction}</h2>}
  
      
        {error && (

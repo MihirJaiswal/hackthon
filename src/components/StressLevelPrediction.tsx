@@ -47,7 +47,6 @@ function StressLevelPrediction() {
     <div className="flex justify-between items-center gap-12 ">
     <div className="container mx-auto px-4 mt-36 w-1/2">
       <h1 className="text-5xl text-center text-white font-semibold mb-4">Stress Level Prediction</h1>
-\
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block mb-1 text-white">Humidity:</label>
@@ -87,11 +86,9 @@ function StressLevelPrediction() {
           Predict
         </button>
       </form>
-      console.log(prediction)
-      {/* Display the prediction result */}
+      
       {prediction && <h2 className="text-xl font-semibold mt-4 text-white text-center py-8 border border-white border-lg">{prediction}</h2>}
 
-      {/* Display any error messages */}
       {error && (
         <div style={{ color: "red" }} className="mt-4">
           <p>{error}</p>
